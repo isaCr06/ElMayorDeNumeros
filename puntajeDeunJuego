@@ -1,0 +1,13 @@
+while True:
+    nombre = input("Nombre del jugador: ")
+    fichasRojas = int(input("Cauntas Fichas rojas obtuvo?: "))
+    fichasAzules = int(input("Cauntas Fichas Azules obtuvo?: "))
+    fichasAmarillas = int(input("Cauntas Fichas Amarillas obtuvo?: "))
+    op1= (fichasRojas * fichasRojas * fichasRojas ) + (fichasAzules + fichasAzules)
+    op2 = fichasAmarillas * fichasAmarillas
+    resultado = op1 - op2
+    print(f" El resultado obtenido por el jugador {nombre} en el juego es de: {resultado}")
+    salida = input(" Quiers caluclar el puntaje de algun otro jugador (s/n)")
+
+    if salida != "s":
+        break
